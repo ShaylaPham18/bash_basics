@@ -4,37 +4,37 @@
 while [ true ]; do
 
    # you can show a prompt with the read command
-   read -p "Do rae mi fa so la ti do? (q to end) > " note
+   read -p "Enter an animal to know what sound they make! (q to end) > " animal
 
-case $note in
+case $animal in
    # each case matches a pattern
-   do|Do)
-      echo "Doe a deer a female deer"
+   dog|Dog)
+      echo "Wolf! Wolf! Wolf!"
       ;;   
-   rae|Rae)
-      echo "Ray a drop of golden sun"
+   cat|Cat)
+      echo "Meow! Meow! Meow!"
       ;;
-   mi|Mi)
-      echo "Me a name a call myself"
+   cow|Cow)
+      echo "Moo! Moo! Moo!"
       ;;
-   fa|Fa)
-      echo "Far a long long way to run"
+   duck|Duck)
+      echo "Quack! Quack! Quack!"
       ;;
-   so|So)
-      echo "So a note that follows fa"
+   lion|Lion)
+      echo "Rawr! Rawr! Rawr!"
       ;;
-   la|La)
-      echo "La a note that follow so"
+   pig|Pig)
+      echo "Oink! Oink! Oink!"
       ;;
-   ti|ta)
-      echo "Tea I drink with jam and bread"
+   bird|Bird)
+      echo "Chirp! Chirp! Chirp!"
       ;;
    q)
-      echo "Hope you enjoyed the sound of music"
+      echo "Hope you learned all your animal sounds!"
       exit 0
       ;;
    *) 
-      echo "Not a note"
+      echo "I don't know that animal's sound!"
       ;;
 esac
 
