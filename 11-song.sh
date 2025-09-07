@@ -4,37 +4,37 @@
 while [ true ]; do
 
    # you can show a prompt with the read command
-   read -p "Enter a color to know the meaning! (q to end) > " color
+   read -p "Enter an animal to know what sound they make! (q to end) > " animal
 
-case $color in
+case $animal in
    # each case matches a pattern
-   blue|Blue)
-      echo "Blue represents calmness"
+   dog|Dog)
+      echo "Wolf! Wolf! Wolf!"
       ;;   
-   red|Red)
-      echo "Red represents danger"
+   cat|Cat)
+      echo "Meow! Meow! Meow!"
       ;;
-   yellow|Yellow)
-      echo "Yellow represents happiness"
+   cow|Cow)
+      echo "Moo! Moo! Moo!"
       ;;
-   purple|Purple)
-      echo "Purple represents royalty"
+   duck|Duck)
+      echo "Quack! Quack! Quack!"
       ;;
-   green|Green)
-      echo "Green represents growth"
+   lion|Lion)
+      echo "Rawr! Rawr! Rawr!"
       ;;
-   orange|Orange)
-      echo "Orange represents creativity"
+   pig|Pig)
+      echo "Oink! Oink! Oink!"
       ;;
-   black|Black)
-      echo "Black represents power"
+   bird|Bird)
+      echo "Chirp! Chirp! Chirp!"
       ;;
    q)
-      echo "Hope you learned what all the colors mean!"
+      echo "Hope you learned all your animal sounds!"
       exit 0
       ;;
    *) 
-      echo "I don't have that color's meaning!"
+      echo "I don't know that animal's sound!"
       ;;
 esac
 
