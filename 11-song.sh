@@ -4,37 +4,37 @@
 while [ true ]; do
 
    # you can show a prompt with the read command
-   read -p "Do rae mi fa so la ti do? (q to end) > " note
+   read -p "Enter a color to know the meaning! (q to end) > " color
 
-case $note in
+case $color in
    # each case matches a pattern
-   do|Do)
-      echo "Doe a deer a female deer"
+   blue|Blue)
+      echo "Blue represents calmness"
       ;;   
-   rae|Rae)
-      echo "Ray a drop of golden sun"
+   red|Red)
+      echo "Red represents danger"
       ;;
-   mi|Mi)
-      echo "Me a name a call myself"
+   yellow|Yellow)
+      echo "Yellow represents happiness"
       ;;
-   fa|Fa)
-      echo "Far a long long way to run"
+   purple|Purple)
+      echo "Purple represents royalty"
       ;;
-   so|So)
-      echo "So a note that follows fa"
+   green|Green)
+      echo "Green represents growth"
       ;;
-   la|La)
-      echo "La a note that follow so"
+   orange|Orange)
+      echo "Orange represents creativity"
       ;;
-   ti|ta)
-      echo "Tea I drink with jam and bread"
+   black|Black)
+      echo "Black represents power"
       ;;
    q)
-      echo "Hope you enjoyed the sound of music"
+      echo "Hope you learned what all the colors mean!"
       exit 0
       ;;
    *) 
-      echo "Not a note"
+      echo "I don't have that color's meaning!"
       ;;
 esac
 
